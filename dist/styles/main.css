@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+
+.section {
+  margin: 30px;
+  text-align: center; }
+
+.accordion {
+  list-style-type: none;
+  padding: 0 300px; }
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding-left: 20px;
+  background-color: #16a085;
+  color: #fff;
+  font-size: 16px; }
+
+.accordion-content {
+  text-align: left; }

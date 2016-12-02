@@ -1,0 +1,18 @@
+.accordion {
+	list-style-type: none;
+	padding: 0 300px;
+}
+
+.accordion-button {
+	width: 100%;
+	text-align: left;
+	border: none;
+	padding-left: 20px;
+	background-color: $green;
+	color: $white;
+	font-size: $font-size-large;
+}
+
+.accordion-content {
+	text-align: left;
+}

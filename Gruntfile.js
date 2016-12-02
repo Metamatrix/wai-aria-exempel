@@ -93,7 +93,7 @@ module.exports = function(grunt){
             tasks: ['javascript']
         },
         pug: {
-            files: ['src/pug/*.pug'],
+            files: ['src/pug/**/*.pug'],
             tasks: ['html']
         },
         css: {

@@ -1,16 +1,16 @@
-ul(class="accordion")
-  li.accordion-list-item
-    button(class="accordion-button", aria-expanded=true, aria-controls="content-1")
-      h3 Innehåll 1
-    #content-1.accordion-content
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  li.accordion-list-item
-    button(class="accordion-button", aria-controls="content-2")
-      h3 Innehåll 2
-    #content-2.accordion-content
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  li.accordion-list-item
-    button(class="accordion-button", aria-controls="content-3")
-      h3 Innehåll 3
-    #content-3.accordion-content
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+div(id="accordion" role="tablist", aria-multiselectable="true")
+  button(id="tab-1",class="accordion-tab selected", role="tab", aria-selected="false", aria-expanded="false", aria-controls="panel-1")
+    h3 Innehåll 1
+  div(id="panel-1", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-1", aria-hidden="true")
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  button(id="tab-2",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-2")
+    h3 Innehåll 2
+  div(id="panel-2", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-2", aria-hidden='true')
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  button(id="tab-3",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-3")
+    h3 Innehåll 3
+  div(id="panel-3", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-3", aria-hidden='true')
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+.comment-div
+  h3 Kommentarer
+  p En accordion ska ha Role="tablist" och aria-multiselectable="true". Detta möjliggör för hjälpmedel så som skärmläsare att förmedla att "tablist" är en dragspelsmeny eller en flervalslista. Det förmedlar också till användaren att tangentbordsnavigeringen matchar en dragspelsmeny och inte en lista med flikar (tab list). Rubriken för varje flik i listan ska ha role="tab". Innehållet i varje flik ska ha role="tabpanel" och ska ha ett aria-labelledby="" som refererar till rubriken som har role="tab". En dragspelsmeny ska hantera expanderat/inte expanderat tillstånd för varje flik genom att "aria-expanded" uppdateras till true eller false. En dragspelsmeny ska hantera markerad flik genom att "aria-selected" uppdateras till true eller false. En dragspelsmeny ska även förmedla synligheten för varje panel genom att "aria-hidden" sätts till true eller false beroende på om panelen är synlig eller inte.

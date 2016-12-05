@@ -23,8 +23,13 @@ module.exports = function(grunt){
           compress: false,
           preserveComments: 'all'
         },
-        src: 'src/scripts/*.js',
-        dest: 'dist/scripts/script.min.js'
+        files: {
+          'dist/scripts/script.min.js': [
+            // Include:
+            'node_modules/jquery/dist/jquery.js',
+            'src/scripts/*.js'
+          ]
+        }
       }
     },
     validation: {

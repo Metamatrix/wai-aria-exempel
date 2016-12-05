@@ -3,20 +3,26 @@ body {
 
 .section {
   margin: 30px;
-  text-align: center; }
-
-.accordion {
-  list-style-type: none;
+  text-align: center;
   padding: 0 300px; }
 
-.accordion-button {
+.comment-div {
+  text-align: left; }
+
+#accordion {
+  list-style-type: none;
+  padding-left: 0; }
+
+.accordion-tab {
   width: 100%;
   text-align: left;
   border: none;
   padding-left: 20px;
   background-color: #16a085;
   color: #fff;
-  font-size: 16px; }
+  font-size: 16px;
+  cursor: pointer; }
 
-.accordion-content {
-  text-align: left; }
+.accordion-panel {
+  text-align: left;
+  display: none; }

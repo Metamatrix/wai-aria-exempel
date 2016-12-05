@@ -1,9 +1,9 @@
-.accordion {
+#accordion {
 	list-style-type: none;
-	padding: 0 300px;
+	padding-left: 0;
 }
 
-.accordion-button {
+.accordion-tab {
 	width: 100%;
 	text-align: left;
 	border: none;
@@ -11,8 +11,10 @@
 	background-color: $green;
 	color: $white;
 	font-size: $font-size-large;
+	cursor: pointer;
 }
 
-.accordion-content {
+.accordion-panel {
 	text-align: left;
+	display: none;
 }

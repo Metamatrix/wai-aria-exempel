@@ -1,0 +1,28 @@
+form
+  ul(class="tablist", role="tablist")
+    li(id="tab1", class="tab selected", aria-controls="panel1", aria-selected="false", role="tab" tabindex="0")
+      p Flik 1
+    li(id="tab2", class="tab", aria-controls="panel2", aria-selected="false", role="tab" tabindex="-1")
+      p Flik 2
+    li(id="tab3", class="tab", aria-controls="panel3", aria-selected="false", role="tab" tabindex="-1")
+      p Flik 3
+    li(id="tab4", class="tab", aria-controls="panel4", aria-selected="false", role="tab" tabindex="-1")
+      p Flik 4
+  div(id="panel1", class="tab-panel", aria-labelledby="tab1", role="tabpanel", aria-hidden="true")
+    h3 Innehåll flik 1
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  div(id="panel2", class="tab-panel", aria-labelledby="tab2", role="tabpanel", aria-hidden="true")
+    h3 Innehåll flik 2
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  div(id="panel3", class="tab-panel", aria-labelledby="tab3", role="tabpanel", aria-hidden="true")
+    h3 Innehåll flik 3
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  div(id="panel4", class="tab-panel", aria-labelledby="tab4", role="tabpanel", aria-hidden="true")
+    h3 Innehåll flik 4
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+.comment-div
+  h3 Kommentarer
+  h4 WAI-ARIA roller, states och egenskaper:
+  p En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa den panel som ska visas för användaren. Tilldela aria-controls="" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" uppdateras till true eller false. Containern för en uppsättning element med role="tab" ska ha role="tablist".
+
+  h4 Tangentbordsinteraktion:

@@ -2,17 +2,23 @@ body {
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 64px;
+  font-family: 'Roboto Slab'; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 36px;
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+
+h3 {
+  font-size: 24px;
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 p {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 .section {
   margin: 30px;
-  text-align: center;
   padding: 0 300px; }
 
 .comment-div {
@@ -109,6 +115,7 @@ p {
   font-weight: 600;
   border-radius: 10px;
   padding: 10px;
+  margin-left: 35px;
   cursor: pointer; }
 
 #alert {
@@ -117,7 +124,7 @@ p {
   position: absolute;
   width: 40%;
   height: 200px;
-  left: 30%;
+  left: 0;
   bottom: 0;
   display: none; }
   #alert #alert-title {
@@ -126,4 +133,4 @@ p {
     margin: 0;
     padding: 10px; }
   #alert #alert-message {
-    margin-top: 35px; }
+    margin: 35px; }

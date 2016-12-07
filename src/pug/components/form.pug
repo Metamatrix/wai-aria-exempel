@@ -1,0 +1,17 @@
+.form-container
+	label(for="input-type-name", class="form-label") Namn:
+	input(id="name", name="input-type-name", type="text", aria-required="true", aria-invalid="false")
+	div(id="name-input-alert")
+		p Både för- och efternamn behöver fyllas i.
+.form-container
+	label(for="input-type-email", class="form-label") Mailadress:
+	input(id="email", name="input-type-email", type="email", aria-required="true", aria-invalid="false")
+	div(id="email-input-alert")
+		p Ogiltig emailadress.
+
+
+.comment-div
+	h3 Kommentarer
+	h4 WAI-ARIA roller, states och egenskaper:
+	p Egenskapen "aria-required" kan sättas för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.
+	p State "aria-invalid" används för att indikera för användaren vilka fält som har inkorrekt data, och sätts programmatiskt till true eller false.

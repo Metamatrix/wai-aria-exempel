@@ -1,3 +1,15 @@
 body {
-    font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+p {
+  font-size: $font-size-large;
 }

@@ -12,7 +12,7 @@
   font-weight: $font-weight-heading;
   font-size: $font-size-large;
   border-style: solid;
-  border-width: 5px 5px 0 5px;
+  border-width: 3px 3px 0 3px;
   border-color: $green;
   cursor: pointer;
 }
@@ -26,7 +26,7 @@
   clear: both;
   display: block;
   margin: 0;
-  border: 5px solid $green;
+  border: 3px solid $green;
 
   h3, p {
       text-align: left;

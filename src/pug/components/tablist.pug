@@ -23,6 +23,5 @@ form
 .comment-div
   h3 Kommentarer
   h4 WAI-ARIA roller, states och egenskaper:
-  p En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa den panel som ska visas för användaren. Tilldela aria-controls="" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" uppdateras till true eller false. Containern för en uppsättning element med role="tab" ska ha role="tablist".
-
-  h4 Tangentbordsinteraktion:
+  p En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa tillhörande panel för användaren.
+  p Tilldela "aria-controls" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" sätts till true eller false. Containern för en uppsättning element med role="tab" ska även ha role="tablist".

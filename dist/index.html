@@ -36,8 +36,10 @@
       <div class="comment-div">
         <h3>Kommentarer</h3>
         <h4>WAI-ARIA roller, states och egenskaper:</h4>
-        <p>En dragspelsmeny ska ha Role="tablist" och aria-multiselectable="true". Detta möjliggör för hjälpmedel så som skärmläsare att förmedla att "tablist" är en dragspelsmeny eller en flervalslista. Det förmedlar också till användaren att tangentbordsnavigeringen matchar en dragspelsmeny och inte en lista med flikar (tab list). Rubriken för varje flik i listan ska ha role="tab". Innehållet i varje flik ska ha role="tabpanel" och ska ha ett aria-labelledby="" som refererar till rubriken som har role="tab". En dragspelsmeny ska hantera expanderat/inte expanderat tillstånd för varje flik genom att "aria-expanded" uppdateras till true eller false. En dragspelsmeny ska hantera markerad flik genom att "aria-selected" uppdateras till true eller false. En dragspelsmeny ska även förmedla synligheten för varje panel genom att "aria-hidden" sätts till true eller false beroende på om panelen är synlig eller inte.</p>
-        <h4>Tangentbordsinteraktion:</h4>
+        <p>En dragspelsmeny ska ha Role="tablist" och aria-multiselectable="true". Detta möjliggör för hjälpmedel som skärmläsare att förmedla att "tablist" är en dragspelsmeny eller en flervalslista. Det förmedlar också till användaren att tangentbordsnavigeringen matchar en dragspelsmeny och inte en lista med flikar (tab list).</p>
+        <p>Rubriken för varje flik i listan ska ha role="tab". Innehållet i varje flik ska ha role="tabpanel" och ska även ha ett aria-labelledby="" som refererar till rubriken som har role="tab".</p>
+        <p>En dragspelsmeny ska hantera expanderat/ej expanderat tillstånd för varje flik genom att "aria-expanded" programmatiskt sätts till true eller false. Dragspelsmenyn ska även hantera markerad flik genom att "aria-selected" sätts till true eller false.</p>
+        <p>Synligheten för varje panel förmedlas genom att "aria-hidden" sätts till true eller false beroende på om panelen är synlig eller inte.</p>
       </div>
     </div>
     <div class="section">
@@ -77,12 +79,35 @@
       <div class="comment-div">
         <h3>Kommentarer</h3>
         <h4>WAI-ARIA roller, states och egenskaper:</h4>
-        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa den panel som ska visas för användaren. Tilldela aria-controls="" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" uppdateras till true eller false. Containern för en uppsättning element med role="tab" ska ha role="tablist".</p>
-        <h4>Tangentbordsinteraktion:</h4>
+        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
+        <p>Tilldela "aria-controls" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" sätts till true eller false. Containern för en uppsättning element med role="tab" ska även ha role="tablist".</p>
       </div>
     </div>
     <div class="section">
-      <h2>Formulär med validering och dialogruta(modal)</h2>
+      <h2>Formulär med validering</h2>
+      <div class="form-container">
+        <label class="form-label" for="input-type-name">Namn:</label>
+        <input id="name" name="input-type-name" type="text" aria-required="true" aria-invalid="false">
+        <div id="name-input-alert">
+          <p>Både för- och efternamn behöver fyllas i.</p>
+        </div>
+      </div>
+      <div class="form-container">
+        <label class="form-label" for="input-type-email">Mailadress:</label>
+        <input id="email" name="input-type-email" type="email" aria-required="true" aria-invalid="false">
+        <div id="email-input-alert">
+          <p>Ogiltig emailadress.</p>
+        </div>
+      </div>
+      <div class="comment-div">
+        <h3>Kommentarer</h3>
+        <h4>WAI-ARIA roller, states och egenskaper:</h4>
+        <p>Egenskapen "aria-required" kan sättas för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.</p>
+        <p>State "aria-invalid" används för att indikera för användaren vilka fält som har inkorrekt data, och sätts programmatiskt till true eller false.</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>dialogruta(modal)</h2>
     </div>
     <script src="scripts/script.min.js"></script>
   </body>

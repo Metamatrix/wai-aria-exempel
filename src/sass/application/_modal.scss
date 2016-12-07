@@ -1,0 +1,47 @@
+.modal-container {
+	position: relative;
+}
+
+#modal-open-button {
+	background-color: $green;
+	color: $white;
+	border: none;
+	font-size: $font-size-h3;
+	font-weight: $font-weight-buttons;
+	border-radius: 10px;
+	padding: 20px;
+	cursor: pointer;
+}
+
+#modal-close-button {
+	background-color: $green;
+	color: $white;
+	border: none;
+	font-size: $font-size-large;
+	font-weight: $font-weight-buttons;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#alert {
+	background-color: $white;
+	border: 3px solid $green;
+	position: absolute;
+	width: 40%;
+	height: 200px;
+	left: 30%;
+	bottom: 0;
+	display: none;
+
+	#alert-title {
+		background-color: $green;
+		color: $white;
+		margin: 0;
+		padding: 10px;
+	}
+
+	#alert-message {
+		margin-top: 35px;
+	}
+}

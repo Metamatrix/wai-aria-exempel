@@ -1,13 +1,13 @@
 .modal-container
-	button(id="modal-open-button", type="button", role="button") Öppna modal
+	button(id="modal-open-button", type="button" aria-controls="alert") Öppna modal
 
 	div(id="alert", role="alertdialog", aria-hidden="true", aria-labelledby="alert-title", aria-describedby="alert-message")
 		h3(id="alert-title") Modal
 		p(id="alert-message", role="document", tabindex="0") Modalens meddelande.
 		button(id="modal-close-button", type="button") Stäng
 .comment-div
-	h3 Kommentarer
-	h4 WAI-ARIA roller, states och egenskaper:
+	h4 Kommentarer
+
 	p Knappar ska ha role="button". "Label" behövs och sätts automatiskt till texten inuti knappen. Den kan också ges med "aria-label" eller "aria-labelledby". Om en beskrivning av knappens funktion finns, ska knappen ha "aria-describedby" satt till ID:t för elementet som innehåller beskrivningen.
 	p När en knapps funktion inte är tillgänglig, ska knappen ha state "aria-disabled".
 	p Om det är en knapp med "toggle"-funktion ska den ha ett aria-pressed state som sätts till true eller false.

@@ -2,19 +2,19 @@ body {
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 h1 {
-  font-size: 64px;
+  font-size: 66px;
   font-family: 'Roboto Slab'; }
 
 h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 h4 {
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
 p {
@@ -105,7 +105,7 @@ p {
   background-color: #16a085;
   color: #fff;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   border-radius: 10px;
   padding: 20px;
@@ -152,7 +152,7 @@ p {
   #menuitem1 a, #menuitem2 a {
     color: white;
     text-decoration: none;
-    font-size: 24px; }
+    font-size: 30px; }
 
 #subdropdown {
   display: none;
@@ -164,7 +164,7 @@ p {
   #subdropdown a {
     color: white;
     text-decoration: none;
-    font-size: 24px; }
+    font-size: 30px; }
 
 .menuitem {
   margin: 10px;

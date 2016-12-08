@@ -7,12 +7,7 @@ $('.accordion-tab').click(function(){
   toggleAttr($($this),'aria-selected', vals);
   toggleAttr($($this),'aria-expanded', vals);
 
-  if($this.next().hasClass('accordion-panel')){
-    $this.next().toggle(function(){
-      $this.next().show();
-    }, function() {
-    });
-  }
+  $this.next().toggle();
 
 });
 

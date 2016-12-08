@@ -13,6 +13,10 @@ h3 {
   font-size: 24px;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
 
+h4 {
+  font-size: 18px;
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+
 p {
   font-size: 18px;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
@@ -134,3 +138,52 @@ p {
     padding: 10px; }
   #alert #alert-message {
     margin: 35px; }
+
+#dropdown {
+  background-color: #16a085;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0; }
+
+#menuitem1, #menuitem2 {
+  cursor: pointer;
+  display: inline;
+  margin-right: 20px; }
+  #menuitem1 a, #menuitem2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; }
+
+#subdropdown {
+  display: none;
+  list-style-type: none;
+  width: 300px;
+  margin: 0;
+  padding-left: 80px;
+  cursor: pointer; }
+  #subdropdown a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; }
+
+.menuitem {
+  margin: 10px;
+  background-color: #16a085;
+  padding: 20px; }
+
+.arrow-img {
+  width: 20px;
+  height: auto;
+  padding: 0 10px; }
+
+#dropdown-content {
+  background-color: #fff;
+  border: 3px solid #16a085;
+  display: block;
+  margin-top: 30px;
+  height: 300px; }
+
+#content1, #content2, #content3 {
+  display: none;
+  color: #16a085;
+  padding-left: 20px; }

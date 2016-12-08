@@ -1,0 +1,29 @@
+ul(id="dropdown", role="menubar",tabindex="0", aria-activedescendant="#")
+	li(role="menuitem" id="menuitem1")
+		a Hem
+	li(role="menuitem" id="menuitem2")
+		a(aria-haspopup="true") Dropdown
+			img(src="images/down-arrow.png", class="arrow-img")
+ul(aria-hidden="true", aria-label="submenu", id="subdropdown")
+	li(role="menuitem" id="content1-menu", class="menuitem")
+		a Meny för Innehåll 1
+	li(role="menuitem" id="content2-menu", class="menuitem")
+		a Meny för Innehåll 2
+	li(role="menuitem" id="content3-menu", class="menuitem")
+		a Meny för Innehåll 3
+
+div(role="region", id="dropdown-content", aria-live="polite")
+	h3(id="content1", class="content") Innehåll 1
+	h3(id="content2", class="content") Innehåll 2
+	h3(id="content3", class="content") Innehåll 3
+
+.comment-div
+	h3 Kommentarer
+	h4 WAI-ARIA roller, states och egenskaper:
+	p Ett meny-element ska ha role="menu" elle role="menubar". Menyns objekt ska ha någon av dessa roller: menuitem, menuitemcheckbox, menuitemradio.
+	p Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha haspopup satt till true.
+	p Om en menuitemcheckbox eller menuitemradio är iklickad ska aria-checked sättas till true.
+	p En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha role="region" och aria-live satt till vad som är passande för situationen; polite eller assertive.
+
+	h4 Tangentbordsnavigering:
+	p Menyn ska ha tabindex satt till -1 eller 0, och "aria-activedescendant" satt till det ID:t som är i fokus. Varje menyobjekt har tabindex satt till -1, förutom men menybar som har tabindex 0.

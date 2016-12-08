@@ -3,13 +3,25 @@ block rootcontent
 	.section
 		h1 WAI-ARIA Exempel
 
-		h3 aria-live
-		h3 aria-hidden
-		h3 aria-expanded
-		h3 aria-haspopup
-		h3 aria-invalid
-		h3 aria-describedby
-		h3 aria-controls
+		h4 aria-hidden
+		h4 aria-expanded
+
+		h4 aria-invalid
+		h4 aria-describedby
+		h4 aria-controls
+
+		h3 Egenskaper
+		h4 aria-activedescendant
+		p aria-activedescendant identifierar det element som är aktivt, när fokus är på till exempel en meny som kan innehålla undermenyer. Aria-activedescendant erbjuder en alternativ metod för att hantera fokus för interaktiva element som kan innehålla flera fokuserbara undergrupper, så som menyer, grids och verktygsfält. Istället för att flytta fokus bland undergrupperna, kan utvecklaren sätta fokus på ett element som som stödjer activedescendant för att referera till det element som är aktivt. Läs mer:
+		a(href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant") W3C aria-activedescendant
+
+		h4 aria-live
+		p aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren. Läs mer:
+		a(href="https://www.w3.org/TR/wai-aria-1.1/#aria-live") W3C aria-live
+
+		h4 aria-haspopup
+		p aria-haspopup anger tillgänglighet och typ av interaktivt popup-element, som till exempel en meny, som triggas av ett element. För att ett popup-element ska vara tillgängligt via tangentbordsnavigering, behöver utvecklaren se till att elementet som triggar popup:en är fokuserbart, att det finns en tangentbordslösning för att öppna popup:en, och att popup-elementet styr fokus för sina undergrupper. Läs mer:
+		a(href="https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup") W3C aria-haspopup
 
 	.section
 		h2 Dragspelsmeny
@@ -25,3 +37,4 @@ block rootcontent
 		include components/modal
 	.section
 		h2 Dropdown-meny
+		include components/dropdown

@@ -118,6 +118,13 @@
           <p>Ogiltig emailadress.</p>
         </div>
       </div>
+      <div class="form-container">
+        <label class="form-label" for="input-type-checkbox">Mailadress:</label>
+        <input id="checkbox" name="input-type-checkbox" type="checkbox" aria-required="true" aria-invalid="false" aria-describedby="checkbox-input-alert">
+        <div id="checkbox-input-alert">
+          <p>checkboxen måste fyllas i.</p>
+        </div>
+      </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
         <p>Egenskapen "aria-required" kan sättas för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.</p>
@@ -131,15 +138,17 @@
         <div id="alert" role="alertdialog" aria-hidden="true" aria-labelledby="alert-title" aria-describedby="alert-message">
           <h3 id="alert-title">Modal</h3>
           <p id="alert-message" role="document" tabindex="0">Modalens meddelande.</p>
-          <button id="modal-close-button" type="button">Stäng</button>
+          <button id="modal-ok-button" type="button">OK</button>
         </div>
       </div>
+      <div id="overlay"></div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
         <p>Knappar ska ha role="button". "Label" behövs och sätts automatiskt till texten inuti knappen. Den kan också ges med "aria-label" eller "aria-labelledby". Om en beskrivning av knappens funktion finns, ska knappen ha "aria-describedby" satt till ID:t för elementet som innehåller beskrivningen.</p>
         <p>När en knapps funktion inte är tillgänglig, ska knappen ha state "aria-disabled".</p>
         <p>Om det är en knapp med "toggle"-funktion ska den ha ett aria-pressed state som sätts till true eller false.</p>
         <p>Generellt ska en dialogruta ha role="dialog". Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att role ska sättas till "alertdialog".</p>
+        <p>Dialogrutan ska vara modal och det uppnås genom att se till att, medan dialogrutan visas, ska interaktion med mus och tangentbord endast kunna göras inom dialogrutan.</p>
         <p>Dialogrutans titel ges av egenskapen aria-label eller aria-labelledby.</p>
         <p>Elementet med role="alertdialog" har en aria-describedby som refererar till meddelande-elementet.</p>
         <p>Meddelande-elementet ska ha role="document" och "tabindex=0". När en användares fokus är på ett element som har role="document" kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.</p>

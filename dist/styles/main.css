@@ -111,7 +111,7 @@ p {
   padding: 20px;
   cursor: pointer; }
 
-#modal-close-button {
+#modal-ok-button {
   background-color: #16a085;
   color: #fff;
   border: none;
@@ -130,7 +130,8 @@ p {
   height: 200px;
   left: 0;
   bottom: 0;
-  display: none; }
+  display: none;
+  z-index: 1; }
   #alert #alert-title {
     background-color: #16a085;
     color: #fff;
@@ -138,6 +139,16 @@ p {
     padding: 10px; }
   #alert #alert-message {
     margin: 35px; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 500%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 0; }
 
 #dropdown {
   background-color: #16a085;

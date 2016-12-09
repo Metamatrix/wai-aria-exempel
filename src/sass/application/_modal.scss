@@ -13,7 +13,7 @@
 	cursor: pointer;
 }
 
-#modal-close-button {
+#modal-ok-button {
 	background-color: $green;
 	color: $white;
 	border: none;
@@ -34,6 +34,7 @@
 	left: 0;
 	bottom: 0;
 	display: none;
+	z-index: 1;
 
 	#alert-title {
 		background-color: $green;
@@ -45,4 +46,15 @@
 	#alert-message {
 		margin: 35px;
 	}
+}
+
+#overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 500%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 0;
 }

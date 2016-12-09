@@ -1,16 +1,16 @@
 ul(id="dropdown", role="menubar",tabindex="0", aria-activedescendant="#")
 	li(role="menuitem" id="menuitem1")
-		a Hem
-	li(role="menuitem" id="menuitem2")
-		a(aria-haspopup="true") Dropdown
+		h4 Hem
+	li(role="menuitem" id="menuitem2", aria-haspopup="true")
+		h4 Dropdown
 			img(src="images/down-arrow.png", class="arrow-img")
 ul(aria-hidden="true", aria-label="submenu", id="subdropdown")
 	li(role="menuitem" id="content1-menu", class="menuitem")
-		a Meny för Innehåll 1
+		p Meny för Innehåll 1
 	li(role="menuitem" id="content2-menu", class="menuitem")
-		a Meny för Innehåll 2
+		p Meny för Innehåll 2
 	li(role="menuitem" id="content3-menu", class="menuitem")
-		a Meny för Innehåll 3
+		p Meny för Innehåll 3
 
 div(role="region", id="dropdown-content", aria-live="polite")
 	h3(id="content1", class="content") Innehåll 1

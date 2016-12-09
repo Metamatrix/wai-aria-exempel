@@ -9,12 +9,14 @@
   float: left;
   padding: 0px 30px;
   margin: 0 10px;
-  font-weight: $font-weight-heading;
-  font-size: $font-size-large;
   border-style: solid;
   border-width: 3px 3px 0 3px;
   border-color: $green;
   cursor: pointer;
+  font-weight: $font-weight-fat;
+    p {
+      margin: 10px;
+    }
 }
 
 .tab.selected {
@@ -37,8 +39,8 @@
     padding: 0 20px 20px;
   }
 
-  h3 {
-    padding: 20px 20px 10px;
+  h4 {
+    padding: 0 20px 10px;
   }
 }
 

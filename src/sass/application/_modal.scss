@@ -6,23 +6,25 @@
 	background-color: $green;
 	color: $white;
 	border: none;
-	font-size: $font-size-h3;
-	font-weight: $font-weight-buttons;
 	border-radius: 10px;
 	padding: 20px;
 	cursor: pointer;
+		h4 {
+			margin-top: 0;
+		}
 }
 
 #modal-ok-button {
 	background-color: $green;
 	color: $white;
 	border: none;
-	font-size: $font-size-large;
-	font-weight: $font-weight-buttons;
 	border-radius: 10px;
 	padding: 10px;
-	margin-left: 35px;
+	margin-left: 20px;
 	cursor: pointer;
+		h5 {
+			margin: 0;
+		}
 }
 
 #alert {
@@ -44,7 +46,7 @@
 	}
 
 	#alert-message {
-		margin: 35px;
+		margin: 20px;
 	}
 }
 

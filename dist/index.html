@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WAI-ARIA Exempel</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family==Open+Sans:400,600,700|Roboto+Slab:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
   </head>
   <body>
     <div class="section">
       <h1>WAI-ARIA Exempel</h1>
+      <h3>Definitioner och praktiska exempel på användning av W3C:s standard WAI-ARIA, Accessible Rich Internet Applications Suite, som definierar ett sätt att göra webbinnehåll och -applikationer mer tillgängliga för personer med funktionshinder.</h3>
+    </div>
+    <div class="section">
       <h2>Definition av viktiga WAI-ARIA attribut</h2>
       <H3>States</H3>
       <h4>aria-hidden</h4>
@@ -35,19 +38,19 @@
       <h3>1 Dragspelsmeny</h3>
       <div id="accordion" role="tablist" aria-multiselectable="true">
         <button class="accordion-tab selected" id="tab-1" role="tab" aria-selected="false" aria-expanded="false" aria-controls="panel-1">
-          <h3>Innehåll 1</h3>
+          <p>Innehåll 1</p>
         </button>
         <div class="accordion-panel show" id="panel-1" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
         <button class="accordion-tab" id="tab-2" aria-selected="false" role="tab" aria-expanded="false" aria-controls="panel-2">
-          <h3>Innehåll 2</h3>
+          <p>Innehåll 2</p>
         </button>
         <div class="accordion-panel show" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
         <button class="accordion-tab" id="tab-3" aria-selected="false" role="tab" aria-expanded="false" aria-controls="panel-3">
-          <h3>Innehåll 3</h3>
+          <p>Innehåll 3</p>
         </button>
         <div class="accordion-panel show" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -79,19 +82,19 @@
           </li>
         </ul>
         <div class="tab-panel" id="panel1" aria-labelledby="tab1" role="tabpanel" aria-hidden="true">
-          <h3>Innehåll flik 1</h3>
+          <h4>Innehåll flik 1</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
         <div class="tab-panel" id="panel2" aria-labelledby="tab2" role="tabpanel" aria-hidden="true">
-          <h3>Innehåll flik 2</h3>
+          <h4>Innehåll flik 2</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
         <div class="tab-panel" id="panel3" aria-labelledby="tab3" role="tabpanel" aria-hidden="true">
-          <h3>Innehåll flik 3</h3>
+          <h4>Innehåll flik 3</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
         <div class="tab-panel" id="panel4" aria-labelledby="tab4" role="tabpanel" aria-hidden="true">
-          <h3>Innehåll flik 4</h3>
+          <h4>Innehåll flik 4</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
       </form>
@@ -105,24 +108,21 @@
     <div class="section">
       <h3>3 Formulär med validering</h3>
       <div class="form-container">
-        <label class="form-label" for="input-type-name">Namn:</label>
-        <input id="name" name="input-type-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="name-input-alert">
+        <label class="form-label" for="input-type-name">
+          <h5>Namn:</h5>
+        </label>
+        <input class="input-field" id="name" name="input-type-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="name-input-alert">
         <div id="name-input-alert">
           <p>Både för- och efternamn behöver fyllas i.</p>
         </div>
       </div>
       <div class="form-container">
-        <label class="form-label" for="input-type-email">Mailadress:</label>
-        <input id="email" name="input-type-email" type="email" aria-required="true" aria-invalid="false" aria-describedby="email-input-alert">
+        <label class="form-label" for="input-type-email">
+          <h5>Mailadress:</h5>
+        </label>
+        <input class="input-field" id="email" name="input-type-email" type="email" aria-required="true" aria-invalid="false" aria-describedby="email-input-alert">
         <div id="email-input-alert">
           <p>Ogiltig emailadress.</p>
-        </div>
-      </div>
-      <div class="form-container">
-        <label class="form-label" for="input-type-checkbox">Mailadress:</label>
-        <input id="checkbox" name="input-type-checkbox" type="checkbox" aria-required="true" aria-invalid="false" aria-describedby="checkbox-input-alert">
-        <div id="checkbox-input-alert">
-          <p>checkboxen måste fyllas i.</p>
         </div>
       </div>
       <div class="comment-div">
@@ -134,11 +134,15 @@
     <div class="section">
       <h3>4 Knapp och dialogruta (modal)</h3>
       <div class="modal-container">
-        <button id="modal-open-button" type="button" aria-controls="alert">Öppna modal</button>
+        <button id="modal-open-button" type="button" aria-controls="alert">
+          <h4>Öppna modal</h4>
+        </button>
         <div id="alert" role="alertdialog" aria-hidden="true" aria-labelledby="alert-title" aria-describedby="alert-message">
-          <h3 id="alert-title">Modal</h3>
+          <h4 id="alert-title">Modal</h4>
           <p id="alert-message" role="document" tabindex="0">Modalens meddelande.</p>
-          <button id="modal-ok-button" type="button">OK</button>
+          <button id="modal-ok-button" type="button">
+            <h5>OK</h5>
+          </button>
         </div>
       </div>
       <div id="overlay"></div>
@@ -157,13 +161,23 @@
     <div class="section">
       <h3>5 Dropdown-meny</h3>
       <ul id="dropdown" role="menubar" tabindex="0" aria-activedescendant="#">
-        <li role="menuitem" id="menuitem1"><a>Hem</a></li>
-        <li role="menuitem" id="menuitem2"><a aria-haspopup="true">Dropdown<img class="arrow-img" src="images/down-arrow.png"></a></li>
+        <li role="menuitem" id="menuitem1">
+          <h4>Hem</h4>
+        </li>
+        <li role="menuitem" id="menuitem2" aria-haspopup="true">
+          <h4>Dropdown<img class="arrow-img" src="images/down-arrow.png"></h4>
+        </li>
       </ul>
       <ul aria-hidden="true" aria-label="submenu" id="subdropdown">
-        <li class="menuitem" role="menuitem" id="content1-menu"><a>Meny för Innehåll 1</a></li>
-        <li class="menuitem" role="menuitem" id="content2-menu"><a>Meny för Innehåll 2</a></li>
-        <li class="menuitem" role="menuitem" id="content3-menu"><a>Meny för Innehåll 3</a></li>
+        <li class="menuitem" role="menuitem" id="content1-menu">
+          <p>Meny för Innehåll 1</p>
+        </li>
+        <li class="menuitem" role="menuitem" id="content2-menu">
+          <p>Meny för Innehåll 2</p>
+        </li>
+        <li class="menuitem" role="menuitem" id="content3-menu">
+          <p>Meny för Innehåll 3</p>
+        </li>
       </ul>
       <div role="region" id="dropdown-content" aria-live="polite">
         <h3 class="content" id="content1">Innehåll 1</h3>
@@ -182,11 +196,17 @@
     </div>
     <div class="section">
       <h3>6 BMI-uträknare</h3>
-      <label class="bmi-label" for="weight-input">Hur mycket väger du (kg)?</label>
-      <input class="bmi-input" type="text" id="weight-input" name="weight-input" aria-controls="result">
-      <label class="bmi-label" for="height-input">Hur lång är du (cm)?</label>
-      <input class="bmi-input" type="text" id="height-input" name="height-input" aria-controls="result">
-      <button id="calculate-button">Räkna ut BMI</button>
+      <label class="form-label" for="weight-input">
+        <h5>Hur mycket väger du (kg)?</h5>
+      </label>
+      <input class="input-field" type="text" id="weight-input" name="weight-input" aria-controls="result">
+      <label class="form-label" for="height-input">
+        <h5>Hur lång är du (cm)?</h5>
+      </label>
+      <input class="input-field" type="text" id="height-input" name="height-input" aria-controls="result">
+      <button id="calculate-button">
+        <h4>Räkna ut BMI</h4>
+      </button>
       <div id="result" aria-live="assertive"></div>
       <div class="comment-div">
         <h4>Kommentarer</h4>

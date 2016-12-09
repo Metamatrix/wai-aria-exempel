@@ -9,14 +9,15 @@
 	cursor: pointer;
 	display: inline;
 	margin-right: 20px;
-		a {
+		h4 {
 			color: white;
 			text-decoration: none;
-			font-size: $font-size-h3;
+			display: inline;
 		}
 }
 
 #subdropdown {
+	cursor: pointer;
 	display: none;
 	list-style-type: none;
 	width: 300px;
@@ -24,10 +25,10 @@
 	padding-left: 80px;
 	cursor: pointer;
 
-	a {
+	p {
 		color: white;
 		text-decoration: none;
-		font-size: $font-size-h3;
+		margin: 0;
 	}
 }
 

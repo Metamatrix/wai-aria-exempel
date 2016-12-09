@@ -1,29 +1,42 @@
 body {
-  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif; }
 
 h1 {
   font-size: 66px;
-  font-family: 'Roboto Slab'; }
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif;
+  font-weight: 700;
+  margin: 0; }
 
 h2 {
   font-size: 40px;
-  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif;
+  font-weight: 500; }
 
 h3 {
   font-size: 30px;
-  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif;
+  line-height: 1.7em;
+  font-weight: 400; }
 
 h4 {
   font-size: 24px;
-  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif;
+  margin-bottom: 0;
+  font-weight: 700; }
+
+h5 {
+  font-size: 20px;
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif; }
 
 p {
-  font-size: 18px;
-  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  font-size: 20px;
+  font-family: "Merriweather", Helvetica, Arial, Sans-serif;
+  line-height: 1.5em; }
 
 .section {
   margin: 30px;
-  padding: 0 300px; }
+  padding: 0 300px;
+  margin-top: 100px; }
 
 .comment-div {
   text-align: left; }
@@ -39,8 +52,8 @@ p {
   padding-left: 20px;
   background-color: #16a085;
   color: #fff;
-  font-size: 18px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 700; }
 
 .accordion-panel {
   text-align: left;
@@ -56,12 +69,13 @@ p {
   float: left;
   padding: 0px 30px;
   margin: 0 10px;
-  font-weight: 700;
-  font-size: 18px;
   border-style: solid;
   border-width: 3px 3px 0 3px;
   border-color: #16a085;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 700; }
+  .tab p {
+    margin: 10px; }
 
 .tab.selected {
   color: #fff;
@@ -77,8 +91,8 @@ p {
     margin: 0; }
   .tab-panel p {
     padding: 0 20px 20px; }
-  .tab-panel h3 {
-    padding: 20px 20px 10px; }
+  .tab-panel h4 {
+    padding: 0 20px 10px; }
 
 #panel2, #panel3, #panel4 {
   display: none; }
@@ -86,7 +100,7 @@ p {
 #email-input-alert, #name-input-alert {
   display: none; }
 
-#name, #email {
+.input-field {
   height: 50px;
   width: 400px;
   padding: 0 10px;
@@ -94,9 +108,9 @@ p {
 
 .form-label {
   display: block;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 10px; }
+  padding: 10px 0; }
+  .form-label h5 {
+    margin: 0; }
 
 .modal-container {
   position: relative; }
@@ -105,22 +119,22 @@ p {
   background-color: #16a085;
   color: #fff;
   border: none;
-  font-size: 30px;
-  font-weight: 600;
   border-radius: 10px;
   padding: 20px;
   cursor: pointer; }
+  #modal-open-button h4 {
+    margin-top: 0; }
 
 #modal-ok-button {
   background-color: #16a085;
   color: #fff;
   border: none;
-  font-size: 18px;
-  font-weight: 600;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 35px;
+  margin-left: 20px;
   cursor: pointer; }
+  #modal-ok-button h5 {
+    margin: 0; }
 
 #alert {
   background-color: #fff;
@@ -138,7 +152,7 @@ p {
     margin: 0;
     padding: 10px; }
   #alert #alert-message {
-    margin: 35px; }
+    margin: 20px; }
 
 #overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -160,22 +174,23 @@ p {
   cursor: pointer;
   display: inline;
   margin-right: 20px; }
-  #menuitem1 a, #menuitem2 a {
+  #menuitem1 h4, #menuitem2 h4 {
     color: white;
     text-decoration: none;
-    font-size: 30px; }
+    display: inline; }
 
 #subdropdown {
+  cursor: pointer;
   display: none;
   list-style-type: none;
   width: 300px;
   margin: 0;
   padding-left: 80px;
   cursor: pointer; }
-  #subdropdown a {
+  #subdropdown p {
     color: white;
     text-decoration: none;
-    font-size: 30px; }
+    margin: 0; }
 
 .menuitem {
   margin: 10px;
@@ -199,27 +214,14 @@ p {
   color: #16a085;
   padding-left: 20px; }
 
-.bmi-label {
-  display: block;
-  display: block;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 10px; }
-
-.bmi-input {
-  display: block;
-  height: 50px;
-  width: 400px;
-  padding: 0 10px;
-  border: 3px solid #16a085; }
-
 #calculate-button {
   background-color: #16a085;
   color: #fff;
   border: none;
-  font-size: 18px;
-  font-weight: 600;
   border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer; }
+  padding: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: block; }
+  #calculate-button h4 {
+    margin: 0; }

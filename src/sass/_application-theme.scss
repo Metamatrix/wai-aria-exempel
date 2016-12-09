@@ -5,17 +5,17 @@
 @import "application-margins";
 
 //Typography
-$font-family-sans-serif: "Open Sans", Helvetica, Arial, Sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, Serif;
+$font-family-base: "Merriweather", Helvetica, Arial, Sans-serif;
+$font-family-code: 'Inconsolata', monospace;
 
-$font-weight-heading: 700;
-$font-weight-buttons: 600;
+$font-weight-fat: 700;
+$font-weight-medium: 500;
+$font-weight-normal: 400;
 
-$font-size-base: 14px;
-$font-size-large: 18px;
+$font-size-base: 20px;
 
 $font-size-h1: 66px;
 $font-size-h2: 40px;
 $font-size-h3: 30px;
-$font-size-h4: 24px;
+$font-size-h4: 24px; //used for buttons as well
 $font-size-h5: 20px;

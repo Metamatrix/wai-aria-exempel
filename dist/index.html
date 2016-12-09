@@ -24,7 +24,7 @@
       <h4>aria-activedescendant</h4>
       <p>aria-activedescendant identifierar det element som är aktivt, när fokus är på till exempel en meny som kan innehålla undermenyer. Aria-activedescendant erbjuder en alternativ metod för att hantera fokus för interaktiva element som kan innehålla flera fokuserbara undergrupper, så som menyer, grids och verktygsfält. Istället för att flytta fokus bland undergrupperna, kan utvecklaren sätta fokus på ett element som som stödjer activedescendant för att referera till det element som är aktivt. Läs mer:</p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant">W3C aria-activedescendant</a>
       <h4>aria-live</h4>
-      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren. Läs mer:</p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-live">W3C aria-live</a>
+      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är default), assertive och polite. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren. Läs mer:</p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-live">W3C aria-live</a>
       <h4>aria-controls</h4>
       <p>aria-controls identifierar det element (ett eller flera) var innehåll eller synlighet kontrolleras av det aktuella elementet. Det kan till exempel vara en flik som kontrollerar visning av relaterat flik-innehåll. Läs mer:</p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-controls">W3C aria-controls</a>
       <h4>aria-haspopup</h4>
@@ -172,7 +172,18 @@
       </div>
     </div>
     <div class="section">
-      <h3>6 Uträknare - Live-region</h3>
+      <h3>6 BMI-uträknare</h3>
+      <label class="bmi-label" for="weight-input">Hur mycket väger du (kg)?</label>
+      <input class="bmi-input" type="text" id="weight-input" name="weight-input" aria-controls="result">
+      <label class="bmi-label" for="height-input">Hur lång är du (cm)?</label>
+      <input class="bmi-input" type="text" id="height-input" name="height-input" aria-controls="result">
+      <button id="calculate-button">Räkna ut BMI</button>
+      <div id="result" aria-live="assertive"></div>
+      <div class="comment-div">
+        <h4>Kommentarer</h4>
+        <p>aria-live används för att indikera att elementet kommer att uppdateras.</p>
+        <p>aria-controls används för att associera ett element med området/elementet det kontrollerar. Flera områden kan associeras till ett element genom att använda mellanslag, t ex aria-controls="ID1 ID2".</p>
+      </div>
     </div>
     <script src="scripts/script.min.js"></script>
   </body>

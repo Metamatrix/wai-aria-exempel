@@ -1,0 +1,14 @@
+label(for="weight-input", class="bmi-label") Hur mycket väger du (kg)?
+input(type="text", class="bmi-input", id="weight-input", name="weight-input", aria-controls="result")
+
+label(for="height-input", class="bmi-label") Hur lång är du (cm)?
+input(type="text", class="bmi-input", id="height-input", name="height-input", aria-controls="result")
+
+button(id="calculate-button") Räkna ut BMI
+
+div(id="result", aria-live="assertive")
+
+.comment-div
+	h4 Kommentarer
+	p aria-live används för att indikera att elementet kommer att uppdateras.
+	p aria-controls används för att associera ett element med området/elementet det kontrollerar. Flera områden kan associeras till ett element genom att använda mellanslag, t ex aria-controls="ID1 ID2".

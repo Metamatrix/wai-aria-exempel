@@ -31,7 +31,7 @@ block rootcontent
 		a(href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant") W3C aria-activedescendant
 
 		h4 aria-live
-		p aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren. Läs mer:
+		p aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är default), assertive och polite. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren. Läs mer:
 		a(href="https://www.w3.org/TR/wai-aria-1.1/#aria-live") W3C aria-live
 
 		h4 aria-controls
@@ -59,4 +59,5 @@ block rootcontent
 		h3 5 Dropdown-meny
 		include components/dropdown
 	.section
-		h3 6 Uträknare - Live-region
+		h3 6 BMI-uträknare
+		include components/calculator

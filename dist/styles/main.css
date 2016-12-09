@@ -38,6 +38,9 @@ p {
   padding: 0 300px;
   margin-top: 100px; }
 
+body {
+  background: rgba(0, 0, 0, 0.02); }
+
 .comment-div {
   text-align: left; }
 
@@ -50,7 +53,7 @@ p {
   text-align: left;
   border: none;
   padding-left: 20px;
-  background-color: #16a085;
+  background-color: #27ae60;
   color: #fff;
   cursor: pointer;
   font-weight: 700; }
@@ -65,13 +68,13 @@ p {
 
 .tab {
   background-color: #fff;
-  color: #16a085;
+  color: #27ae60;
   float: left;
   padding: 0px 30px;
   margin: 0 10px;
   border-style: solid;
   border-width: 3px 3px 0 3px;
-  border-color: #16a085;
+  border-color: #27ae60;
   cursor: pointer;
   font-weight: 700; }
   .tab p {
@@ -79,13 +82,14 @@ p {
 
 .tab.selected {
   color: #fff;
-  background-color: #16a085; }
+  background-color: #27ae60; }
 
 .tab-panel {
   clear: both;
   display: block;
   margin: 0;
-  border: 3px solid #16a085; }
+  border: 3px solid #27ae60;
+  background-color: #fff; }
   .tab-panel h3, .tab-panel p {
     text-align: left;
     margin: 0; }
@@ -104,7 +108,7 @@ p {
   height: 50px;
   width: 400px;
   padding: 0 10px;
-  border: 3px solid #16a085; }
+  border: 3px solid #27ae60; }
 
 .form-label {
   display: block;
@@ -116,7 +120,7 @@ p {
   position: relative; }
 
 #modal-open-button {
-  background-color: #16a085;
+  background-color: #27ae60;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -126,7 +130,7 @@ p {
     margin-top: 0; }
 
 #modal-ok-button {
-  background-color: #16a085;
+  background-color: #27ae60;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -138,7 +142,7 @@ p {
 
 #alert {
   background-color: #fff;
-  border: 3px solid #16a085;
+  border: 3px solid #27ae60;
   position: absolute;
   width: 40%;
   height: 200px;
@@ -147,7 +151,7 @@ p {
   display: none;
   z-index: 1; }
   #alert #alert-title {
-    background-color: #16a085;
+    background-color: #27ae60;
     color: #fff;
     margin: 0;
     padding: 10px; }
@@ -165,7 +169,7 @@ p {
   z-index: 0; }
 
 #dropdown {
-  background-color: #16a085;
+  background-color: #27ae60;
   list-style-type: none;
   padding: 20px;
   margin: 0; }
@@ -194,7 +198,7 @@ p {
 
 .menuitem {
   margin: 10px;
-  background-color: #16a085;
+  background-color: #27ae60;
   padding: 20px; }
 
 .arrow-img {
@@ -204,18 +208,18 @@ p {
 
 #dropdown-content {
   background-color: #fff;
-  border: 3px solid #16a085;
+  border: 3px solid #27ae60;
   display: block;
   margin-top: 30px;
   height: 300px; }
 
 #content1, #content2, #content3 {
   display: none;
-  color: #16a085;
+  color: #27ae60;
   padding-left: 20px; }
 
 #calculate-button {
-  background-color: #16a085;
+  background-color: #27ae60;
   color: #fff;
   border: none;
   border-radius: 10px;

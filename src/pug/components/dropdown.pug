@@ -3,8 +3,8 @@ ul(id="dropdown", role="menubar")
 		h4 Hem
 	li(role="menuitem" id="menuitem2", aria-haspopup="true")
 		h4 Dropdown
-			img(src="images/down-arrow.png", class="arrow-img")
-ul(aria-hidden="true", aria-label="submenu", id="subdropdown")
+			img(src="images/down-arrow.png", alt="pil ned", class="arrow-img")
+ul(role="menu", aria-hidden="true", id="subdropdown")
 	li(role="menuitem" id="content1-menu", class="menuitem")
 		p Meny Innehåll 1
 	li(role="menuitem" id="content2-menu", class="menuitem")
@@ -13,9 +13,9 @@ ul(aria-hidden="true", aria-label="submenu", id="subdropdown")
 		p Meny Innehåll 3
 
 div(role="region", id="dropdown-content", aria-live="polite")
-	h3(id="content1", class="content") Innehåll 1
-	h3(id="content2", class="content") Innehåll 2
-	h3(id="content3", class="content") Innehåll 3
+	h3(id="content1", class="content", aria-labelledby="content1-menu") Innehåll 1
+	h3(id="content2", class="content", aria-labelledby="content2-menu") Innehåll 2
+	h3(id="content3", class="content", aria-labelledby="content3-menu") Innehåll 3
 
 .comment-div
 	h4 Kommentarer

@@ -44,7 +44,7 @@
     <div class="section">
       <h2>Exempel</h2>
       <h3>1. Dragspelsmeny</h3>
-      <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div id="accordion" role="tablist" multiselectable="true">
         <button class="accordion-tab selected" id="tab-1" role="tab" aria-selected="false" aria-expanded="false" aria-controls="panel-1">
           <p>Innehåll 1</p>
         </button>
@@ -116,7 +116,7 @@
     <div class="section">
       <h3>3. Formulär med validering</h3>
       <div class="form-container">
-        <label class="form-label" for="input-type-name">
+        <label class="form-label" for="name">
           <h5>Namn:</h5>
         </label>
         <input class="input-field" id="name" name="input-type-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="name-input-alert">
@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="form-container">
-        <label class="form-label" for="input-type-email">
+        <label class="form-label" for="email">
           <h5>Mailadress:</h5>
         </label>
         <input class="input-field" id="email" name="input-type-email" type="email" aria-required="true" aria-invalid="false" aria-describedby="email-input-alert">
@@ -171,10 +171,10 @@
           <h4>Hem</h4>
         </li>
         <li role="menuitem" id="menuitem2" aria-haspopup="true">
-          <h4>Dropdown<img class="arrow-img" src="images/down-arrow.png"></h4>
+          <h4>Dropdown<img class="arrow-img" src="images/down-arrow.png" alt="pil ned"></h4>
         </li>
       </ul>
-      <ul aria-hidden="true" aria-label="submenu" id="subdropdown">
+      <ul role="menu" aria-hidden="true" id="subdropdown">
         <li class="menuitem" role="menuitem" id="content1-menu">
           <p>Meny Innehåll 1</p>
         </li>
@@ -186,9 +186,9 @@
         </li>
       </ul>
       <div role="region" id="dropdown-content" aria-live="polite">
-        <h3 class="content" id="content1">Innehåll 1</h3>
-        <h3 class="content" id="content2">Innehåll 2</h3>
-        <h3 class="content" id="content3">Innehåll 3</h3>
+        <h3 class="content" id="content1" aria-labelledby="content1-menu">Innehåll 1</h3>
+        <h3 class="content" id="content2" aria-labelledby="content2-menu">Innehåll 2</h3>
+        <h3 class="content" id="content3" aria-labelledby="content3-menu">Innehåll 3</h3>
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>

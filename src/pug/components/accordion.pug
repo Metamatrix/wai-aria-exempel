@@ -14,7 +14,7 @@ div(id="accordion" role="tablist", aria-multiselectable="true")
 .comment-div
   h4 Kommentarer
 
-  p En dragspelsmeny ska ha Role="tablist" och aria-multiselectable="true". Detta möjliggör för hjälpmedel som skärmläsare att förmedla att "tablist" är en dragspelsmeny eller en flervalslista och inte en "vanlig" tabblista där endast ett val i taget kan göras.
-  p Rubriken för varje flik i listan ska ha role="tab". Innehållet i varje flik ska ha role="tabpanel" och ska även ha ett aria-labelledby="" som refererar till rubriken som har role="tab".
-  p En dragspelsmeny ska hantera expanderat/ej expanderat tillstånd för varje flik genom att "aria-expanded" programmatiskt sätts till true eller false. Dragspelsmenyn ska även hantera markerad flik genom att "aria-selected" sätts till true eller false.
-  p Synligheten för varje panel förmedlas genom att "aria-hidden" sätts till true eller false beroende på om panelen är synlig eller inte.
+  p En dragspelsmeny ska ha <span class="code-text">Role="tablist"</span> och <span class="code-text">aria-multiselectable="true"</span>. Detta möjliggör för hjälpmedel som skärmläsare att förmedla att elementet med rollen "tablist" är en dragspelsmeny eller en flervalslista, och inte en "vanlig" tabblista där endast ett val i taget kan göras.
+  p Rubriken för varje flik i listan ska ha <span class="code-text">role="tab"</span>. Innehållet i varje flik ska ha <span class="code-text">role="tabpanel"</span> och ska även ha ett <span class="code-text">aria-labelledby</span> som refererar till rubriken som har <span class="code-text">role="tab"</span>.
+  p En dragspelsmeny ska hantera utfällt och infällt tillstånd för varje flik genom att <span class="code-text">aria-expanded</span> programmatiskt sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Dragspelsmenyn ska även hantera markerad flik genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>.
+  p Synligheten för varje panel förmedlas genom att <span class="code-text">aria-hidden</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span> beroende på om panelen är synlig eller inte.

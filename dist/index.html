@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
   </head>
   <body>
-    <div class="section">
+    <div class="section page-heading-section">
       <h1>WAI-ARIA Exempel</h1>
       <h3>Definitioner och praktiska exempel på användning av W3C:s standard WAI-ARIA, Accessible Rich Internet Applications Suite, som definierar ett sätt att göra webbinnehåll och -applikationer mer tillgängliga för personer med funktionshinder.</h3>
     </div>
@@ -16,7 +16,7 @@
       <h2>Definition av viktiga WAI-ARIA attribut</h2>
       <H3>States</H3>
       <h4>aria-hidden</h4>
-      <p>aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har sitt aria-hidden attribut satt till true.</p>
+      <p>aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har sitt aria-hidden-attribut satt till true.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"> aria-hidden</a></p>
       <h4>aria-expanded</h4>
       <p>aria-expanded indikerar om elementet, eller ett annat element som det kontrollerar, är expanderat eller inte. Till exempel kan det indikera om en del av en meny är utfäld eller inte.</p>
@@ -66,10 +66,10 @@
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>En dragspelsmeny ska ha Role="tablist" och aria-multiselectable="true". Detta möjliggör för hjälpmedel som skärmläsare att förmedla att "tablist" är en dragspelsmeny eller en flervalslista och inte en "vanlig" tabblista där endast ett val i taget kan göras.</p>
-        <p>Rubriken för varje flik i listan ska ha role="tab". Innehållet i varje flik ska ha role="tabpanel" och ska även ha ett aria-labelledby="" som refererar till rubriken som har role="tab".</p>
-        <p>En dragspelsmeny ska hantera expanderat/ej expanderat tillstånd för varje flik genom att "aria-expanded" programmatiskt sätts till true eller false. Dragspelsmenyn ska även hantera markerad flik genom att "aria-selected" sätts till true eller false.</p>
-        <p>Synligheten för varje panel förmedlas genom att "aria-hidden" sätts till true eller false beroende på om panelen är synlig eller inte.</p>
+        <p>En dragspelsmeny ska ha <span class="code-text">Role="tablist"</span> och <span class="code-text">aria-multiselectable="true"</span>. Detta möjliggör för hjälpmedel som skärmläsare att förmedla att elementet med rollen "tablist" är en dragspelsmeny eller en flervalslista, och inte en "vanlig" tabblista där endast ett val i taget kan göras.</p>
+        <p>Rubriken för varje flik i listan ska ha <span class="code-text">role="tab"</span>. Innehållet i varje flik ska ha <span class="code-text">role="tabpanel"</span> och ska även ha ett <span class="code-text">aria-labelledby</span> som refererar till rubriken som har <span class="code-text">role="tab"</span>.</p>
+        <p>En dragspelsmeny ska hantera utfällt och infällt tillstånd för varje flik genom att <span class="code-text">aria-expanded</span> programmatiskt sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Dragspelsmenyn ska även hantera markerad flik genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>.</p>
+        <p>Synligheten för varje panel förmedlas genom att <span class="code-text">aria-hidden</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span> beroende på om panelen är synlig eller inte.</p>
       </div>
     </div>
     <div class="section">
@@ -108,8 +108,8 @@
       </form>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha role="tabpanel". Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
-        <p>Tilldela "aria-controls" för varje flik till innehållspanelens ID. Vilken flik som är aktiv hanteras genom att "aria-selected" sätts till true eller false. Containern för en uppsättning element med role="tab" ska även ha role="tablist".</p>
+        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
+        <p>Tilldela <span class="code-text">"aria-controls"</span> för varje flik till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span></p>
         <p>En tabblista har samma funktion som en dragspelsmeny, med skillnaden att det inte är en flervalslista.</p>
       </div>
     </div>
@@ -135,8 +135,8 @@
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>Egenskapen "aria-required" kan sättas för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.</p>
-        <p>State "aria-invalid" används för att indikera för användaren vilka fält som har inkorrekt data, och sätts programmatiskt till true eller false.</p>
+        <p>Egenskapen <span class="code-text">aria-required</span> sätts för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.</p>
+        <p>State <span class="code-text">aria-invalid</span> används för att indikera för användaren vilka fält som har inkorrekt data, och sätts programmatiskt till <span class="code-text">true</span> eller <span class="code-text">false</span>.</p>
       </div>
     </div>
     <div class="section">
@@ -147,7 +147,7 @@
         </button>
         <div id="alert" role="alertdialog" aria-hidden="true" aria-labelledby="alert-title" aria-describedby="alert-message">
           <h4 id="alert-title">Modal</h4>
-          <p id="alert-message" role="document" tabindex="0">Modalens meddelande.</p>
+          <p id="alert-message" role="document">Modalens meddelande.</p>
           <button id="modal-ok-button" type="button">
             <h5>OK</h5>
           </button>
@@ -156,19 +156,17 @@
       <div id="overlay"></div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>Knappar ska ha role="button". "Label" behövs och sätts automatiskt till texten inuti knappen. Den kan också ges med "aria-label" eller "aria-labelledby". Om en beskrivning av knappens funktion finns, ska knappen ha "aria-describedby" satt till ID:t för elementet som innehåller beskrivningen.</p>
-        <p>När en knapps funktion inte är tillgänglig, ska knappen ha state "aria-disabled".</p>
-        <p>Om det är en knapp med "toggle"-funktion ska den ha ett aria-pressed state som sätts till true eller false.</p>
-        <p>Generellt ska en dialogruta ha role="dialog". Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att role ska sättas till "alertdialog".</p>
+        <p>Knappen som kontrollerar dialogrutan ska ha <span class="code-text">aria-controls</span> satt till dialogrutans <span class="code-text">id</span>.</p>
+        <p>Generellt ska en dialogruta ha <span class="code-text">role="dialog"</span>. Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att rollen ska sättas till <span class="code-text">alertdialog</span>.</p>
         <p>Dialogrutan ska vara modal och det uppnås genom att se till att, medan dialogrutan visas, ska interaktion med mus och tangentbord endast kunna göras inom dialogrutan.</p>
-        <p>Dialogrutans titel ges av egenskapen aria-label eller aria-labelledby.</p>
-        <p>Elementet med role="alertdialog" har en aria-describedby som refererar till meddelande-elementet.</p>
-        <p>Meddelande-elementet ska ha role="document" och "tabindex=0". När en användares fokus är på ett element som har role="document" kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.</p>
+        <p>Dialogrutan har egenskapen <span class="code-text">aria-label</span> eller <span class="code-text">aria-labelledby</span> satt till <span class="code-text">id</span> för dialogrutans titel.</p>
+        <p>Dialogrutan har även en <span class="code-text">aria-describedby</span> som refererar till dialogrutans meddelande (elementets <span class="code-text">id</span>).</p>
+        <p>Dialogrutans meddelande ska även ha <span class="code-text">role="document"</span>. När en användares fokus är på ett element som har <span class="code-text">role="document"</span> kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.</p>
       </div>
     </div>
     <div class="section">
       <h3>5. Dropdown-meny</h3>
-      <ul id="dropdown" role="menubar" tabindex="0" aria-activedescendant="#">
+      <ul id="dropdown" role="menubar">
         <li role="menuitem" id="menuitem1">
           <h4>Hem</h4>
         </li>
@@ -178,13 +176,13 @@
       </ul>
       <ul aria-hidden="true" aria-label="submenu" id="subdropdown">
         <li class="menuitem" role="menuitem" id="content1-menu">
-          <p>Meny för Innehåll 1</p>
+          <p>Meny Innehåll 1</p>
         </li>
         <li class="menuitem" role="menuitem" id="content2-menu">
-          <p>Meny för Innehåll 2</p>
+          <p>Meny Innehåll 2</p>
         </li>
         <li class="menuitem" role="menuitem" id="content3-menu">
-          <p>Meny för Innehåll 3</p>
+          <p>Meny Innehåll 3</p>
         </li>
       </ul>
       <div role="region" id="dropdown-content" aria-live="polite">
@@ -194,12 +192,10 @@
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>Ett meny-element ska ha role="menu" elle role="menubar". Menyns objekt ska ha någon av dessa roller: menuitem, menuitemcheckbox, menuitemradio.</p>
-        <p>Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha haspopup satt till true.</p>
-        <p>Om en menuitemcheckbox eller menuitemradio är iklickad ska aria-checked sättas till true.</p>
-        <p>En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha role="region" och aria-live satt till vad som är passande för situationen; polite eller assertive.</p>
-        <h5>Tangentbordsnavigering:</h5>
-        <p>Menyn ska ha tabindex satt till -1 eller 0, och "aria-activedescendant" satt till det ID:t som är i fokus. Varje menyobjekt har tabindex satt till -1, förutom men menybar som har tabindex 0.</p>
+        <p>Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span>.</p>
+        <p>Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha <span class="code-text">aria-haspopup</span> satt till true.</p>
+        <p>Om ett meny-objekt med rollerna <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> är iklickad ska <span class="code-text">aria-checked</span> sättas till <span class="code-text">true</span>.</p>
+        <p>En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha <span class="code-text">role="region"</span> och <span class="code-text">aria-live</span> satt till vad som är passande för situationen; <span class="code-text">polite</span> eller <span class="code-text">assertive</span>.</p>
       </div>
     </div>
     <div class="section">
@@ -218,10 +214,11 @@
       <div id="result" aria-live="assertive"></div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>aria-live används för att indikera att elementet kommer att uppdateras.</p>
-        <p>aria-controls används för att associera ett element med området/elementet det kontrollerar. Flera områden kan associeras till ett element genom att använda mellanslag, t ex aria-controls="ID1 ID2".</p>
+        <p><span class="code-text">aria-live</span> används för att indikera att elementet kommer att uppdateras, i det här fallet elementet där resultatet av uträkningen visas.</p>
+        <p><span class="code-text">aria-controls</span> används för att associera ett element med området/elementet det kontrollerar. Flera områden kan associeras till ett element genom att använda mellanslag, t ex <span class="code-text">aria-controls="ID1 ID2"</span>.</p>
       </div>
     </div>
+    <footer><span>Sidan byggd av Sandra Widmark för metamatrix.se.</span></footer>
     <script src="scripts/script.min.js"></script>
   </body>
 </html>

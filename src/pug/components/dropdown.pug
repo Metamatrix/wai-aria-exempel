@@ -1,4 +1,4 @@
-ul(id="dropdown", role="menubar",tabindex="0", aria-activedescendant="#")
+ul(id="dropdown", role="menubar")
 	li(role="menuitem" id="menuitem1")
 		h4 Hem
 	li(role="menuitem" id="menuitem2", aria-haspopup="true")
@@ -6,11 +6,11 @@ ul(id="dropdown", role="menubar",tabindex="0", aria-activedescendant="#")
 			img(src="images/down-arrow.png", class="arrow-img")
 ul(aria-hidden="true", aria-label="submenu", id="subdropdown")
 	li(role="menuitem" id="content1-menu", class="menuitem")
-		p Meny för Innehåll 1
+		p Meny Innehåll 1
 	li(role="menuitem" id="content2-menu", class="menuitem")
-		p Meny för Innehåll 2
+		p Meny Innehåll 2
 	li(role="menuitem" id="content3-menu", class="menuitem")
-		p Meny för Innehåll 3
+		p Meny Innehåll 3
 
 div(role="region", id="dropdown-content", aria-live="polite")
 	h3(id="content1", class="content") Innehåll 1
@@ -20,10 +20,7 @@ div(role="region", id="dropdown-content", aria-live="polite")
 .comment-div
 	h4 Kommentarer
 
-	p Ett meny-element ska ha role="menu" elle role="menubar". Menyns objekt ska ha någon av dessa roller: menuitem, menuitemcheckbox, menuitemradio.
-	p Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha haspopup satt till true.
-	p Om en menuitemcheckbox eller menuitemradio är iklickad ska aria-checked sättas till true.
-	p En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha role="region" och aria-live satt till vad som är passande för situationen; polite eller assertive.
-
-	h5 Tangentbordsnavigering:
-	p Menyn ska ha tabindex satt till -1 eller 0, och "aria-activedescendant" satt till det ID:t som är i fokus. Varje menyobjekt har tabindex satt till -1, förutom men menybar som har tabindex 0.
+	p Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span>.
+	p Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha <span class="code-text">aria-haspopup</span> satt till true.
+	p Om ett meny-objekt med rollerna <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> är iklickad ska <span class="code-text">aria-checked</span> sättas till <span class="code-text">true</span>.
+	p En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha <span class="code-text">role="region"</span> och <span class="code-text">aria-live</span> satt till vad som är passande för situationen; <span class="code-text">polite</span> eller <span class="code-text">assertive</span>.

@@ -1,6 +1,6 @@
 extends layouts/root
 block rootcontent
-	.section
+	.section.page-heading-section
 		h1 WAI-ARIA Exempel
 		h3 Definitioner och praktiska exempel på användning av W3C:s standard WAI-ARIA, Accessible Rich Internet Applications Suite, som definierar ett sätt att göra webbinnehåll och -applikationer mer tillgängliga för personer med funktionshinder.
 	.section
@@ -9,7 +9,7 @@ block rootcontent
 		H3 States
 
 		h4 aria-hidden
-		p aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har sitt aria-hidden attribut satt till true.
+		p aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har sitt aria-hidden-attribut satt till true.
 		p Läs mer hos W3C:
 			a(class="w3c-link", href="https://www.w3.org/TR/wai-aria-1.1/#aria-hidden")  aria-hidden
 
@@ -70,3 +70,5 @@ block rootcontent
 	.section
 		h3 6. BMI-uträknare
 		include components/calculator
+	footer
+		span Sidan byggd av Sandra Widmark för metamatrix.se.

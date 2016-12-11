@@ -1,4 +1,5 @@
 body {
+    margin: 0;
 }
 
 .w3c-link {
@@ -6,4 +7,11 @@ body {
     font-size: $font-size-h5;
     color: $dark-blue;
     font-weight: $font-weight-normal;
+}
+
+.page-heading-section {
+    background-color: $dark-blue;
+    color: $white;
+    padding: 100px 330px 50px;
+    margin: 0;
 }

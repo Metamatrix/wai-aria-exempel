@@ -4,18 +4,16 @@
 
 	div(id="alert", role="alertdialog", aria-hidden="true", aria-labelledby="alert-title", aria-describedby="alert-message")
 		h4(id="alert-title") Modal
-		p(id="alert-message", role="document", tabindex="0") Modalens meddelande.
+		p(id="alert-message", role="document") Modalens meddelande.
 		button(id="modal-ok-button", type="button")
 			h5 OK
 #overlay
 .comment-div
 	h4 Kommentarer
 
-	p Knappar ska ha role="button". "Label" behövs och sätts automatiskt till texten inuti knappen. Den kan också ges med "aria-label" eller "aria-labelledby". Om en beskrivning av knappens funktion finns, ska knappen ha "aria-describedby" satt till ID:t för elementet som innehåller beskrivningen.
-	p När en knapps funktion inte är tillgänglig, ska knappen ha state "aria-disabled".
-	p Om det är en knapp med "toggle"-funktion ska den ha ett aria-pressed state som sätts till true eller false.
-	p Generellt ska en dialogruta ha role="dialog". Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att role ska sättas till "alertdialog".
+	p Knappen som kontrollerar dialogrutan ska ha <span class="code-text">aria-controls</span> satt till dialogrutans <span class="code-text">id</span>.
+	p Generellt ska en dialogruta ha <span class="code-text">role="dialog"</span>. Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att rollen ska sättas till <span class="code-text">alertdialog</span>.
 	p Dialogrutan ska vara modal och det uppnås genom att se till att, medan dialogrutan visas, ska interaktion med mus och tangentbord endast kunna göras inom dialogrutan.
-	p Dialogrutans titel ges av egenskapen aria-label eller aria-labelledby.
-	p Elementet med role="alertdialog" har en aria-describedby som refererar till meddelande-elementet.
-	p Meddelande-elementet ska ha role="document" och "tabindex=0". När en användares fokus är på ett element som har role="document" kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.
+	p Dialogrutan har egenskapen <span class="code-text">aria-label</span> eller <span class="code-text">aria-labelledby</span> satt till <span class="code-text">id</span> för dialogrutans titel.
+	p Dialogrutan har även en <span class="code-text">aria-describedby</span> som refererar till dialogrutans meddelande (elementets <span class="code-text">id</span>).
+	p Dialogrutans meddelande ska även ha <span class="code-text">role="document"</span>. När en användares fokus är på ett element som har <span class="code-text">role="document"</span> kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.

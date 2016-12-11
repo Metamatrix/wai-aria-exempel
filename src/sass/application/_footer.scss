@@ -1,0 +1,13 @@
+footer {
+    background-color: $dark-blue;
+    color: $white;
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 50px 20px;
+    span {
+        margin: 0;
+        vertical-align: middle;
+        font-size: $font-size-base;
+        line-height: 1.5em;
+    }
+}

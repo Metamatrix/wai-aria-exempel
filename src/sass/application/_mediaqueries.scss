@@ -1,0 +1,50 @@
+
+	/* Small Devices, Tablets  */
+	@media only screen and (max-width : 768px) {
+		.section {
+			margin: $margin-large;
+			padding: 0 20px;
+			margin-top: 50px;
+		}
+
+		.page-heading-section {
+			padding: 50px;
+			margin: 0;
+		}
+	}
+
+	/* Small Devices, phones */
+	@media screen and (max-width : 480px) {
+		.section {
+			margin: 0;
+			padding: 0 30px;
+			margin-top: 50px;
+		}
+
+		.page-heading-section {
+			padding: 50px;;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+
+		h4 {
+			font-size: 20px;
+		}
+
+		#subdropdown {
+			padding-left: 0;
+		}
+
+
+	}

@@ -16,13 +16,13 @@
       <h2>Definition av viktiga WAI-ARIA attribut</h2>
       <H3>States</H3>
       <h4>aria-hidden</h4>
-      <p>aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har sitt aria-hidden-attribut satt till true.</p>
+      <p>aria-hidden indikerar om ett element är synligt eller inte. Ett element anses vara dolt om det inte återges eller har aria-hidden satt till true.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"> aria-hidden</a></p>
       <h4>aria-expanded</h4>
-      <p>aria-expanded indikerar om elementet, eller ett annat element som det kontrollerar, är expanderat eller inte. Till exempel kan det indikera om en del av en meny är utfäld eller inte.</p>
+      <p>aria-expanded indikerar om elementet, eller ett annat element som det kontrollerar, är expanderat eller inte. Till exempel kan det indikera om en del av en meny är utfälld eller inte.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-expanded"> aria-expanded</a></p>
       <h4>aria-invalid</h4>
-      <p>aria-invalid indikerar om det inmatade värdet inte har angetts enligt formatet som förväntas av applikationen. Om värdet beräknas vara ogiltigt ska attributet sättas till true. Användaren bör informera om felet och komma med försöag på lösning av det.</p>
+      <p>aria-invalid indikerar om det inmatade värdet inte har angetts enligt formatet som förväntas av applikationen. Om värdet beräknas vara ogiltigt ska attributet sättas till true. Utvecklaren bör informera om felet och komma med förslag på lösning av det.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-invalid"> aria-invalid</a></p>
       <h3>Egenskaper</h3>
       <h4>aria-describedby</h4>
@@ -32,13 +32,13 @@
       <p>aria-activedescendant identifierar det element som är aktivt, när fokus är på till exempel en meny som kan innehålla undermenyer. Aria-activedescendant erbjuder en alternativ metod för att hantera fokus för interaktiva element som kan innehålla flera fokuserbara undergrupper, så som menyer, grids och verktygsfält. Istället för att flytta fokus bland undergrupperna, kan utvecklaren sätta fokus på ett element som som stödjer activedescendant för att referera till det element som är aktivt.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant"> aria-activedescendant</a></p>
       <h4>aria-live</h4>
-      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är default), assertive och polite. När regionen specificeras som Polite, kommer hjälpmedel att notifiera användaren, men inte avbryta en pågående handling. När området specificeras som Assertive kommer hjälpmedel omedelbart notifiera användaren.</p>
+      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från elementet, det så kallade live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är standardvärdet), assertive och polite. När regionen specificeras som polite, kommer hjälpmedel att notifiera användaren men inte avbryta en pågående handling. När området specificeras som assertive kommer hjälpmedel omedelbart notifiera användaren.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-live"> aria-live</a></p>
       <h4>aria-controls</h4>
-      <p>aria-controls identifierar det element (ett eller flera) var innehåll eller synlighet kontrolleras av det aktuella elementet. Det kan till exempel vara en flik som kontrollerar visning av relaterat flik-innehåll.</p>
+      <p>aria-controls identifierar det element (ett eller flera) vars innehåll eller synlighet kontrolleras av det aktuella elementet. Det kan till exempel vara en flik som kontrollerar visning av relaterat flik-innehåll.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-controls"> aria-controls</a></p>
       <h4>aria-haspopup</h4>
-      <p>aria-haspopup anger tillgänglighet och typ av interaktivt popup-element, som till exempel en meny, som triggas av ett element. För att ett popup-element ska vara tillgängligt via tangentbordsnavigering, behöver utvecklaren se till att elementet som triggar popup:en är fokuserbart, att det finns en tangentbordslösning för att öppna popup:en, och att popup-elementet styr fokus för sina undergrupper.</p>
+      <p>aria-haspopup notifierar användaren om att det finns ett interaktivt popup-element, som till exempel en meny, som triggas av elementet som har aria-haspopup="true".</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup"> aria-haspopup</a></p>
     </div>
     <div class="section">

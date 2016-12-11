@@ -59,6 +59,13 @@ body {
 .code-text {
   font-family: "Inconsolata", monospace; }
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .section {
+    padding: 0 300px; }
+  .page-heading-section {
+    padding: 100px 330px 50px; } }
+
 /* Small Devices, Tablets  */
 @media only screen and (max-width: 768px) {
   .section {

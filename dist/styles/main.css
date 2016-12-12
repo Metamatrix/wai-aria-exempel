@@ -59,6 +59,10 @@ body {
 .code-text {
   font-family: "Inconsolata", monospace; }
 
+.code-img {
+  margin-top: 20px;
+  width: 100%; }
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   .section {

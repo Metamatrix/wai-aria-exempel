@@ -28,11 +28,8 @@
       <h4>aria-describedby</h4>
       <p>aria-describedby identifierar det element (ett eller flera) som beskriver objektet. Det används för att sätta en relation mellan element och text som beskriver dem. Aria-describedby liknar aria-labelledby som beskriver essensen av ett objekt. En beskrivning ger dock mer information som användaren kan behöva.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-ariadescribedby"> aria-describedby</a></p>
-      <h4>aria-activedescendant</h4>
-      <p>aria-activedescendant identifierar det element som är aktivt, när fokus är på till exempel en meny som kan innehålla undermenyer. Aria-activedescendant erbjuder en alternativ metod för att hantera fokus för interaktiva element som kan innehålla flera fokuserbara undergrupper, så som menyer, grids och verktygsfält. Istället för att flytta fokus bland undergrupperna, kan utvecklaren sätta fokus på ett element som som stödjer activedescendant för att referera till det element som är aktivt.</p>
-      <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant"> aria-activedescendant</a></p>
       <h4>aria-live</h4>
-      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från elementet, det så kallade live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är standardvärdet), assertive och polite. När regionen specificeras som polite, kommer hjälpmedel att notifiera användaren men inte avbryta en pågående handling. När området specificeras som assertive kommer hjälpmedel omedelbart notifiera användaren.</p>
+      <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från elementet, det så kallade live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är standardvärdet), assertive och polite. När området specificeras som polite, kommer hjälpmedel att notifiera användaren men inte avbryta en pågående handling. När området specificeras som assertive kommer hjälpmedel omedelbart notifiera användaren.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-live"> aria-live</a></p>
       <h4>aria-controls</h4>
       <p>aria-controls identifierar det element (ett eller flera) vars innehåll eller synlighet kontrolleras av det aktuella elementet. Det kan till exempel vara en flik som kontrollerar visning av relaterat flik-innehåll.</p>
@@ -63,6 +60,9 @@
         <div class="accordion-panel show" id="panel-3" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
+      </div>
+      <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/accordion.png" alt="html-kod dragspelsmeny">
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
@@ -107,6 +107,9 @@
         </div>
       </form>
       <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/tablist.png" alt="html-kod tabblista">
+      </div>
+      <div class="comment-div">
         <h4>Kommentarer</h4>
         <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
         <p>Tilldela <span class="code-text">"aria-controls"</span> för varje flik till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span></p>
@@ -134,6 +137,9 @@
         </div>
       </div>
       <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/form.png" alt="html-kod formulär">
+      </div>
+      <div class="comment-div">
         <h4>Kommentarer</h4>
         <p>Egenskapen <span class="code-text">aria-required</span> sätts för ett formulär för att indikera för användaren att det är nödvändigt att fylla i formuläret.</p>
         <p>State <span class="code-text">aria-invalid</span> används för att indikera för användaren vilka fält som har inkorrekt data, och sätts programmatiskt till <span class="code-text">true</span> eller <span class="code-text">false</span>.</p>
@@ -154,6 +160,9 @@
         </div>
       </div>
       <div id="overlay"></div>
+      <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/modal.png" alt="html-kod dialogruta">
+      </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
         <p>Knappen som kontrollerar dialogrutan ska ha <span class="code-text">aria-controls</span> satt till dialogrutans <span class="code-text">id</span>.</p>
@@ -191,8 +200,11 @@
         <h3 class="content" id="content3" aria-labelledby="content3-menu">Innehåll 3</h3>
       </div>
       <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/dropdown.png" alt="html-kod dropdown-meny">
+      </div>
+      <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span>.</p>
+        <p>Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> beroende på objektets funktion.</p>
         <p>Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha <span class="code-text">aria-haspopup</span> satt till true.</p>
         <p>Om ett meny-objekt med rollerna <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> är iklickad ska <span class="code-text">aria-checked</span> sättas till <span class="code-text">true</span>.</p>
         <p>En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha <span class="code-text">role="region"</span> och <span class="code-text">aria-live</span> satt till vad som är passande för situationen; <span class="code-text">polite</span> eller <span class="code-text">assertive</span>.</p>
@@ -212,6 +224,9 @@
         <h4>Räkna ut BMI</h4>
       </button>
       <div id="result" aria-live="assertive"></div>
+      <div class="comment-div">
+        <h4>html-kod</h4><img class="code-img" src="images/calculator.png" alt="html-kod bmi-uträknare">
+      </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
         <p><span class="code-text">aria-live</span> används för att indikera att elementet kommer att uppdateras, i det här fallet elementet där resultatet av uträkningen visas.</p>

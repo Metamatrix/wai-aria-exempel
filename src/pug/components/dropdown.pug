@@ -18,9 +18,13 @@ div(role="region", id="dropdown-content", aria-live="polite")
 	h3(id="content3", class="content", aria-labelledby="content3-menu") Innehåll 3
 
 .comment-div
+	h4 html-kod
+	img(src="images/dropdown.png", alt="html-kod dropdown-meny", class="code-img")
+
+.comment-div
 	h4 Kommentarer
 
-	p Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span>.
+	p Ett meny-element som är visuellt synligt hela tiden ska ha <span class="code-text">role="menubar"</span>. Menyns objekt ska ha någon av dessa roller: <span class="code-text">menuitem</span>, <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> beroende på objektets funktion.
 	p Om aktivering av ett menyobjekt öppnar en undermeny, ska menyobjektet ha <span class="code-text">aria-haspopup</span> satt till true.
 	p Om ett meny-objekt med rollerna <span class="code-text">menuitemcheckbox</span> eller <span class="code-text">menuitemradio</span> är iklickad ska <span class="code-text">aria-checked</span> sättas till <span class="code-text">true</span>.
 	p En container med innehåll som uppdateras när man klickar på ett menyobjekt kan ha <span class="code-text">role="region"</span> och <span class="code-text">aria-live</span> satt till vad som är passande för situationen; <span class="code-text">polite</span> eller <span class="code-text">assertive</span>.

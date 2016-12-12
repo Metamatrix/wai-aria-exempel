@@ -12,6 +12,10 @@ button(id="calculate-button")
 div(id="result", aria-live="assertive")
 
 .comment-div
+	h4 html-kod
+	img(src="images/calculator.png", alt="html-kod bmi-uträknare", class="code-img")
+
+.comment-div
 	h4 Kommentarer
 	p <span class="code-text">aria-live</span> används för att indikera att elementet kommer att uppdateras, i det här fallet elementet där resultatet av uträkningen visas.
 	p <span class="code-text">aria-controls</span> används för att associera ett element med området/elementet det kontrollerar. Flera områden kan associeras till ett element genom att använda mellanslag, t ex <span class="code-text">aria-controls="ID1 ID2"</span>.

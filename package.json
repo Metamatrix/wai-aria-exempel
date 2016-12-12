@@ -1,7 +1,7 @@
 {
   "name": "wai-aria-exempel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples of usage of the standard WAI-ARIA from W3C",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Metamatrix/wai-aria-exempel.git"
   },
-  "author": "",
+  "author": "Sandra Widmark",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Metamatrix/wai-aria-exempel/issues"

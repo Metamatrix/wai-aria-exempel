@@ -26,7 +26,7 @@
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-invalid"> aria-invalid</a></p>
       <h3>Egenskaper</h3>
       <h4>aria-describedby</h4>
-      <p>aria-describedby identifierar det element (ett eller flera) som beskriver objektet. Det används för att sätta en relation mellan element och text som beskriver dem. Aria-describedby liknar aria-labelledby som beskriver essensen av ett objekt. En beskrivning ger dock mer information som användaren kan behöva.</p>
+      <p>aria-describedby identifierar det element (ett eller flera) som beskriver objektet. Det används för att sätta en relation mellan element och text som beskriver dem. Aria-describedby liknar aria-labelledby som beskriver essensen av ett objekt, men en beskrivning ger mer information som användaren kan behöva.</p>
       <p>Läs mer hos W3C:<a class="w3c-link" href="https://www.w3.org/TR/wai-aria-1.1/#aria-ariadescribedby"> aria-describedby</a></p>
       <h4>aria-live</h4>
       <p>aria-live indikerar att ett element kommer att uppdateras och vilka uppdateringar som kan förväntas från elementet, det så kallade live-området. Attributets värden uttrycks i betydelse, och värdena som finns är off (som är standardvärdet), assertive och polite. När området specificeras som polite, kommer hjälpmedel att notifiera användaren men inte avbryta en pågående handling. När området specificeras som assertive kommer hjälpmedel omedelbart notifiera användaren.</p>
@@ -111,8 +111,8 @@
       </div>
       <div class="comment-div">
         <h4>Kommentarer</h4>
-        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
-        <p>Tilldela <span class="code-text">"aria-controls"</span> för varje flik till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span></p>
+        <p>En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span> och flikarna <span class="code-text">role="tab"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.</p>
+        <p><span class="code-text">aria-controls</span> för varje flik sätts till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span></p>
         <p>En tabblista har samma funktion som en dragspelsmeny, med skillnaden att det inte är en flervalslista.</p>
       </div>
     </div>
@@ -168,7 +168,7 @@
         <p>Knappen som kontrollerar dialogrutan ska ha <span class="code-text">aria-controls</span> satt till dialogrutans <span class="code-text">id</span>.</p>
         <p>Generellt ska en dialogruta ha <span class="code-text">role="dialog"</span>. Om det är en enklare dialogruta med ett meddelande som varnar eller begär bekräftelse (t ex "Är du säker på att du vill avsluta?") så är riktlinjen att rollen ska sättas till <span class="code-text">alertdialog</span>.</p>
         <p>Dialogrutan ska vara modal och det uppnås genom att se till att, medan dialogrutan visas, ska interaktion med mus och tangentbord endast kunna göras inom dialogrutan.</p>
-        <p>Dialogrutan har egenskapen <span class="code-text">aria-label</span> eller <span class="code-text">aria-labelledby</span> satt till <span class="code-text">id</span> för dialogrutans titel.</p>
+        <p>Dialogrutan har egenskapen <span class="code-text">aria-label</span> eller <span class="code-text">aria-labelledby</span> satt till <span class="code-text">id</span> för dialogrutans titel. Om titeln är synlig ska <span class="code-text">aria-labelledby</span> användas, men är den inte visuellt synlig ska <span class="code-text">aria-label</span> användas istället.</p>
         <p>Dialogrutan har även en <span class="code-text">aria-describedby</span> som refererar till dialogrutans meddelande (elementets <span class="code-text">id</span>).</p>
         <p>Dialogrutans meddelande ska även ha <span class="code-text">role="document"</span>. När en användares fokus är på ett element som har <span class="code-text">role="document"</span> kan hjälpmedel som har ett läsläge för statiskt innehåll byta till det läsläget, där användaren kan kontrollera läsmarkören.</p>
       </div>

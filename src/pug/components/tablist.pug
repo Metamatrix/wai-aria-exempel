@@ -27,6 +27,6 @@ form
 .comment-div
 	h4 Kommentarer
 
-	p En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.
-	p Tilldela <span class="code-text">"aria-controls"</span> för varje flik till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span>
+	p En tabblista/fliklista innehåller flikar och deras tillhörande innehållspaneler. Innehållspanelerna ska ha <span class="code-text">role="tabpanel"</span> och flikarna <span class="code-text">role="tab"</span>. Varje flik-element är en länk till att visa tillhörande panel för användaren.
+	p <span class="code-text">aria-controls</span> för varje flik sätts till innehållspanelens <span class="code-text">id</span>. Vilken flik som är aktiv hanteras genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Containern för en uppsättning element med <span class="code-text">role="tab"</span> ska även ha <span class="code-text">role="tablist".</span>
 	p En tabblista har samma funktion som en dragspelsmeny, med skillnaden att det inte är en flervalslista.

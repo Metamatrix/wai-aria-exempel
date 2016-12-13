@@ -1,23 +1,23 @@
 div(id="accordion" role="tablist", multiselectable="true")
-  button(id="tab-1",class="accordion-tab selected", role="tab", aria-selected="false", aria-expanded="false", aria-controls="panel-1")
-    p Innehåll 1
-  div(id="panel-1", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-1", aria-hidden="true")
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  button(id="tab-2",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-2")
-    p Innehåll 2
-  div(id="panel-2", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-2", aria-hidden='true')
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  button(id="tab-3",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-3")
-    p Innehåll 3
-  div(id="panel-3", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-3", aria-hidden='true')
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	button(id="tab-1",class="accordion-tab selected", role="tab", aria-selected="false", aria-expanded="false", aria-controls="panel-1")
+		p Innehåll 1
+	div(id="panel-1", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-1", aria-hidden="true")
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	button(id="tab-2",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-2")
+		p Innehåll 2
+	div(id="panel-2", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-2", aria-hidden='true')
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	button(id="tab-3",class="accordion-tab", aria-selected="false", role="tab", aria-expanded="false", aria-controls="panel-3")
+		p Innehåll 3
+	div(id="panel-3", class="accordion-panel show" role="tabpanel" aria-labelledby="tab-3", aria-hidden='true')
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 .comment-div
-  h4 html-kod
-  img(src="images/accordion.png", alt="html-kod dragspelsmeny", class="code-img")
+	h4 html-kod
+	img(src="images/accordion.png", alt="html-kod dragspelsmeny", class="code-img")
 .comment-div
-  h4 Kommentarer
+	h4 Kommentarer
 
-  p En dragspelsmeny ska ha <span class="code-text">Role="tablist"</span> och <span class="code-text">aria-multiselectable="true"</span>. Detta möjliggör för hjälpmedel som skärmläsare att förmedla att elementet med rollen "tablist" är en dragspelsmeny eller en flervalslista, och inte en "vanlig" tabblista där endast ett val i taget kan göras.
-  p Rubriken för varje flik i listan ska ha <span class="code-text">role="tab"</span>. Innehållet i varje flik ska ha <span class="code-text">role="tabpanel"</span> och ska även ha ett <span class="code-text">aria-labelledby</span> som refererar till rubriken som har <span class="code-text">role="tab"</span>.
-  p En dragspelsmeny ska hantera utfällt och infällt tillstånd för varje flik genom att <span class="code-text">aria-expanded</span> programmatiskt sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Dragspelsmenyn ska även hantera markerad flik genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>.
-  p Synligheten för varje panel förmedlas genom att <span class="code-text">aria-hidden</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span> beroende på om panelen är synlig eller inte.
+	p En dragspelsmeny ska ha <span class="code-text">Role="tablist"</span> och <span class="code-text">aria-multiselectable="true"</span>. Detta möjliggör för hjälpmedel som skärmläsare att förmedla att elementet med rollen "tablist" är en dragspelsmeny eller en flervalslista, och inte en "vanlig" tabblista där endast ett val i taget kan göras.
+	p Rubriken för varje flik i listan ska ha <span class="code-text">role="tab"</span>. Innehållet i varje flik ska ha <span class="code-text">role="tabpanel"</span> och ska även ha ett <span class="code-text">aria-labelledby</span> som refererar till rubriken som har <span class="code-text">role="tab"</span>.
+	p En dragspelsmeny ska hantera utfällt och infällt tillstånd för varje flik genom att <span class="code-text">aria-expanded</span> programmatiskt sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>. Dragspelsmenyn ska även hantera markerad flik genom att <span class="code-text">aria-selected</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span>.
+	p Synligheten för varje panel förmedlas genom att <span class="code-text">aria-hidden</span> sätts till <span class="code-text">true</span> eller <span class="code-text">false</span> beroende på om panelen är synlig eller inte.
